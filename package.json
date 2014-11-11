@@ -1,0 +1,12 @@
+{
+	"name" : "lista-mercado-rest",
+	"version" : "0.0.1"	,
+	"description" : "Api para el manejo de una lista de mercado",
+	"main" : "server.js",
+	"dependencies":{
+		"mongoose":"latest",
+		"express": "^4.7.1",
+ 		"method-override": "^2.1.2",
+ 		"body-parser": "^1.5.1"
+	}
+}
