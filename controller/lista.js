@@ -28,15 +28,15 @@ exports.consultarLista = function(req, res) {
 //POST - Inserta una nueva Lista en la BD
 exports.guardarLista = function(req, res) {
 	console.log('POST');
-	var Lista = new Lista({
+	var l = new Lista({
 		codigo : req.body.codigo,
 		nombre : req.body.nombre,
 		elementos : req.body.elementos,
 		estado : req.body.estado
 	});
-	Lista.save(function(err) {
+	l.save(function(err) {
 		if(err) return res.status(500).send(err.message);
-		res.status(200).jsonp(Lista);
+		res.status(200).jsonp(l);
 	});
 };
 
