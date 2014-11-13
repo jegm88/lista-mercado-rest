@@ -4,7 +4,8 @@ exports = module.exports = function(app, mongoose) {
 		codigo : {type: Number},
 	    nombre : {type: String},
 		estrella:{type: Boolean},
-		estado: {type: Number}
+		estado: {type: Number},
+		usuario: {type: Number}
 	});
 	mongoose.model('Elemento',elemento);
 };

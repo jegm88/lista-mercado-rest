@@ -32,7 +32,8 @@ exports.guardarLista = function(req, res) {
 		codigo : req.body.codigo,
 		nombre : req.body.nombre,
 		elementos : req.body.elementos,
-		estado : req.body.estado
+		estado : req.body.estado,
+		usuario : req.body.usuario
 	});
 	l.save(function(err) {
 		if(err) return res.status(500).send(err.message);
@@ -49,6 +50,7 @@ exports.actualizarLista = function(req, res) {
 		Lista.nombre = req.body.nombre;
 		Lista.elementos = req.body.elementos;
 		Lista.estado = req.body.estado;
+		Lista.usuario = req.body.usuario;
 
 		Lista.save(function(err) {
 			if(err) return res.status(500).send(err.message);

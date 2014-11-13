@@ -33,7 +33,8 @@ exports.guardarElemento = function(req, res) {
 		codigo : req.body.codigo,
 		nombre : req.body.nombre,
 		estrella : req.body.estrella,
-		estado : req.body.estado
+		estado : req.body.estado,
+		usuario : req.body.usuario
 	});
 	e.save(function(err) {
 		if(err) return res.status(500).send(err.message);
@@ -50,6 +51,7 @@ exports.actualizarElemento = function(req, res) {
 		Elemento.nombre = req.body.nombre;
 		Elemento.estrella = req.body.estrella;
 		Elemento.estado = req.body.estado;
+		Elemento.usuario = req.body.usuario;
 
 		Elemento.save(function(err) {
 			if(err) return res.status(500).send(err.message);

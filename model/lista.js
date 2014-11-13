@@ -10,7 +10,8 @@ exports = module.exports = function(app, mongoose) {
 			marca: {type: String},
 			fecha_compra: {type: Date}
 		},
-		estado: {type: Number}
+		estado: {type: Number},
+		usuario: {type: Number}
 	});
 	mongoose.model('Lista',lista);
 };

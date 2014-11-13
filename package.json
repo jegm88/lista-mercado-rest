@@ -1,12 +1,19 @@
 {
 	"name" : "lista-mercado-rest",
-	"version" : "0.0.1"	,
+	"version" : "0.0.2"	,
 	"description" : "Api para el manejo de una lista de mercado",
 	"main" : "server.js",
 	"dependencies":{
 		"mongoose":"latest",
 		"express": "^4.7.1",
  		"method-override": "^2.1.2",
- 		"body-parser": "^1.5.1"
+ 		"body-parser": "^1.5.1",
+ 		"passport":"latest",
+ 		"passport-http":"latest",
+ 		"bcrypt-nodejs":"latest"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/jegm88/lista-mercado-rest.git"
 	}
 }
